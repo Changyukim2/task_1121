@@ -31,7 +31,6 @@ void print_status(GraphType* g) {
 	static int step = 1;
 	printf("STEP %d: ", step++);
 
-	// Print distance array
 	printf("distance: ");
 	for (int i = 0; i < g->n; i++) {
 		if (distance[i] == INF)
@@ -41,7 +40,6 @@ void print_status(GraphType* g) {
 	}
 	printf("\n");
 
-	// Print found array
 	printf(" found:   ");
 	for (int i = 0; i < g->n; i++)
 		printf("%2d ", found[i]);
